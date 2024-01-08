@@ -17,7 +17,7 @@ createApp({
                 })
                 .catch(err => {
                     alert(err.response.data.message)
-                    window.location="login.html"
+                    window.location="index.html"
                 })
         },
         getData(){
@@ -32,8 +32,7 @@ createApp({
                 default:{...item},
                 imageUrl:item.imageUrl,
                 imagesUrl:[item.imageUrl, ...item.imagesUrl]
-            }
-            console.log(this.productDetail)
+            }            
         },
         changeImg(item){
             this.productDetail.imageUrl = item
